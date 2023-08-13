@@ -1,4 +1,3 @@
 # Quiz Game
 A quiz game compatible with [Open Trivia Database API](https://opentdb.com/api_config.php).
-* To modify the questions, access the _question_data_ list inside the _data_ file.
-* Upload your questions from [Trivia DB](https://opentdb.com/) and format them accordingly.
+* The application features random game-related questions obtained from the API, so each play feels unique.
