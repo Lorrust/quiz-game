@@ -8,7 +8,7 @@ class QuizInterface:
     def __init__(self, quiz_brain: QuizBrain):
         self.quiz = quiz_brain
         self.window = Tk()
-        self.window.title("Quizzler")
+        self.window.title("Quiz Game")
         self.window.config(padx=20, pady=20, bg=THEME_COLOR)
         
         self.score_label = Label(text="Score: 0", bg= THEME_COLOR, fg="white", font=("Arial", 12, "bold"))
@@ -26,11 +26,11 @@ class QuizInterface:
         
         
         
-        true_image = PhotoImage(file="images/true.png")
+        true_image = PhotoImage(file="true.png")
         self.true_button = Button(image=true_image, highlightthickness=0, bd=0, command=self.true_pressed)
         self.true_button.grid(row=2, column=0)
         
-        self.false_image = PhotoImage(file="images/false.png")
+        self.false_image = PhotoImage(file="false.png")
         self.false_button = Button(image=self.false_image, highlightthickness=0, bd=0, command=self.false_pressed)
         self.false_button.grid(row=2, column=1)
         
